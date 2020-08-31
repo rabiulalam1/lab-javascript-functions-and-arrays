@@ -66,6 +66,9 @@ const wordsUnique = [
   "bring",
 ];
 
+const uniquifyArray = (wordsUnique) =>
+  wordsUnique.length === 0 ? null : [...new Set(wordsUnique)];
+
 // Iteration #6: Find elements
 const wordsFind = [
   "machine",
