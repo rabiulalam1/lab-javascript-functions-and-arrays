@@ -26,6 +26,10 @@ const sumNumbers = (numbers) =>
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
+const averageNumbers = (numbersAvg) =>
+  numbersAvg.length === 0
+    ? null
+    : numbersAvg.reduce((a, b) => a + b) / numbersAvg.length;
 
 // Level 2: Array of strings
 const wordsArr = [
@@ -40,6 +44,12 @@ const wordsArr = [
   "fuel",
   "palace",
 ];
+const averageWordLength = (wordsArr) =>
+  wordsArr.length === 0
+    ? null
+    : wordsArr.length === 1
+    ? wordsArr[0].length
+    : wordsArr.reduce((a, b) => a + b.length / wordsArr.length, 0);
 
 // Iteration #5: Unique arrays
 const wordsUnique = [
