@@ -13,6 +13,9 @@ const words = [
   "crackpot",
 ];
 
+const findLongestWord = (words) =>
+  words.length <= 0 ? null : words.sort((a, b) => b.length - a.length)[0];
+
 // Iteration #3: Calculate the sum
 
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
